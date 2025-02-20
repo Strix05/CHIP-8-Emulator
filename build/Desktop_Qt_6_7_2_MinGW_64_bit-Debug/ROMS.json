@@ -1,0 +1,11 @@
+[
+    {
+        "BRIX": "C:/Qt/Projects/CHIP-8_Emulator/CHIP-8 ROMs/Games/BRIX.ch8"
+    },
+    {
+        "TETRIS": "C:/Qt/Projects/CHIP-8_Emulator/CHIP-8 ROMs/Games/TETRIS.ch8"
+    },
+    {
+        "INVADERS": "C:/Qt/Projects/CHIP-8_Emulator/CHIP-8 ROMs/Games/INVADERS.ch8"
+    }
+]

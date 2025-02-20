@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1536</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1536</width>
+    <height>789</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1536</width>
+    <height>789</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1536</width>
+     <height>768</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1536</width>
+     <height>768</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="EmuDisplayWidget" name="display" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1536</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuColors_2">
+     <property name="title">
+      <string>Colors</string>
+     </property>
+     <addaction name="actionPixel_On"/>
+     <addaction name="actionPixel_Off"/>
+    </widget>
+    <widget class="QMenu" name="menuRemove_ROM">
+     <property name="title">
+      <string>Remove ROM</string>
+     </property>
+    </widget>
+    <addaction name="actionLoad_New_ROM"/>
+    <addaction name="menuRemove_ROM"/>
+    <addaction name="menuColors_2"/>
+   </widget>
+   <widget class="QMenu" name="menuROMs">
+    <property name="title">
+     <string>ROMs</string>
+    </property>
+   </widget>
+   <addaction name="menuSettings"/>
+   <addaction name="menuROMs"/>
+  </widget>
+  <action name="actionHz">
+   <property name="text">
+    <string>Emulator Settings</string>
+   </property>
+  </action>
+  <action name="actionPixel_On">
+   <property name="text">
+    <string>Pixel On</string>
+   </property>
+  </action>
+  <action name="actionPixel_Off">
+   <property name="text">
+    <string>Pixel Off</string>
+   </property>
+  </action>
+  <action name="actionControls">
+   <property name="text">
+    <string>Controls</string>
+   </property>
+  </action>
+  <action name="actionLoad_New_ROM">
+   <property name="text">
+    <string>Load New ROM</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>EmuDisplayWidget</class>
+   <extends>QWidget</extends>
+   <header>emudisplaywidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
